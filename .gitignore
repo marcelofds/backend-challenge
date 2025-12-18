@@ -2,7 +2,7 @@
 **/bin/
 **/obj/
 
-# IDE files
+# IDE files 
 **/.idea/
 **/.vs/
 **/.vscode/
