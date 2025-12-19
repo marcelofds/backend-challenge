@@ -19,14 +19,8 @@ public static class ApiConfiguration
 
         services.AddOpenApi();
 
-#if DEBUG
-
-        var connectionString = configuration.GetConnectionString("DefaultConnection");
-
-#else
-          var connectionString = configuration["DATABASE_URL"];
-
-#endif
+        var connectionString = configuration["DATABASE_URL"]
+                               ?? configuration.GetConnectionString("DefaultConnection");
 
         services.AddDbContext<FinanceTestContext>(options =>
             options.UseNpgsql(connectionString));
