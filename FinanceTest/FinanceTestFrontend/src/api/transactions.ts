@@ -3,13 +3,13 @@ const API_BASE_URL =
 
 export const TransactionType = {
   Debit: 1,
-  Credit: 2,
-  Ticket: 3,
-  Financing: 4,
-  Loan: 5,
-  Sale: 6,
-  TED: 7,
-  DOC: 8,
+  Boleto: 2,
+  Financing: 3,
+  Credit: 4,
+  LoanReceipt: 5,
+  Sales: 6,
+  TEDReceipt: 7,
+  DOCReceipt: 8,
   Rent: 9,
 } as const;
 
